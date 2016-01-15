@@ -24,6 +24,18 @@ $ fly [task:]<target> [--flightplan flightplan.(js|coffee)]
 
 By default, the `fly` command will try to load `flightplan.js` or `flightplan.coffee`.
 
+**You may also run flightplan programmatically**
+
+```javascript
+// flightplan.js
+var plan = require('flightplan');
+
+// define targets and tasks...
+
+// execute flightplan
+plan.run('task', 'target', options);
+```
+
 ## Sample flightplan.js
 
 ```javascript
